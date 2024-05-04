@@ -9,8 +9,7 @@ services:
       POSTGRES_PASSWORD: hyy99zqe
       POSTGRES_DB: test_db
     ports:
-      - "5432:5432"
-  
+      - "5432:5432"  
   pgadmin:
     container_name: pgadmin_container
     image: dpage/pgadmin4
@@ -18,6 +17,5 @@ services:
     enviroment:
       PGADMIN_DEFAULT_EMAIL: thyg3s3n@gmail.com
       PGADMIN_DEFAULT_PASSWORD: hyy99zqe
-      POSTGRES_DB: test_db
     ports:
       - "5050:80"
